@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+body,
+html {
+  height: 100%;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+
+.bg {
+  /* Location of the image */
+  background-image: url(./img/back_gnd.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #5b4778;
+  height: 100%;
+}
+
+.img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 20px;
+  margin-bottom: 30px;
+  width: 350px;
+}
+
+#tap {
+  display: inline-block;
+}
+
+.foto {
+  width: 80%;
+  max-width: 400px;
+  min-width: 300px;
+  margin-top: 100px;
+  /* margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px; */
+  display: inline-block;
+  /* vertical-align: middle;
+  line-height: normal; */
+}
+
+/* Paper */
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Handlee);
+
+.paper {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  min-width: 300px;
+  height: 540px;
+  margin: 50px auto;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  background: linear-gradient(
+    to bottom,
+    #d9e6f9 0%,
+    /* soft baby blue */ #bfd9f7 50%,
+    /* light sky blue */ #d9e6f9 100% /* fade back to soft baby blue */
+  );
+
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.paper-content {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  bottom: 30px;
+  left: 50px;
+  padding: 20px; /* Add padding to ensure text doesn't touch edges */
+  overflow: hidden; /* Prevent text from overflowing */
+  box-sizing: border-box; /* Ensure padding is included in the width/height */
+  background: transparent; /* Make the background transparent */
+}
+
+.paper-content .teks {
+  font-family: "Great Vibes", cursive; /* Apply the new font */
+  text-align: left;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  line-height: 30px;
+  padding: 0 10px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #3f3f44;
+  font-size: 18px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.kotak {
+  position: relative;
+  width: 90%;
+  max-width: 550px;
+  min-width: 200px;
+  max-height: 350px;
+  min-height: 100px;
+  top: 300px;
+  padding: 20px 0;
+  display: inline-block;
+  background: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.btn {
+  border-radius: 40px;
+}
+
+#slideLima {
+  position: relative;
+  top: 300px;
+}
+
+#trims {
+  position: relative;
+  top: 300px;
+  display: inline-block;
+}
+
+#teks1,
+#teks2,
+#trims {
+  font-family: "Great Vibes", cursive; /* Apply the font */
+  font-size: 28px; /* Adjust size as needed */
+  color: #000000; /* Adjust color as needed */
+  text-align: center; /* Center align the text */
+  line-height: 1.8; /* Increase line height for better spacing */
+  margin: 20px 0; /* Add vertical spacing */
+  padding: 0 15px; /* Add horizontal padding */
+  word-wrap: break-word; /* Ensure long words break properly */
+  overflow-wrap: break-word; /* Ensure text doesn't overflow */
+}
+
+h1 {
+  font-weight: normal;
+}
+
+li {
+  display: inline-block;
+  font-size: 16px;
+  list-style-type: none;
+  position: relative;
+  left: -20px;
+  margin-top: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 24px;
+}
+
+body {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container {
+  color: #000000;
+  position: relative;
+  top: 250px;
+  padding: 0;
+  text-align: center;
+}
+
+/* Pinterest Layout Styles */
+.pinterest-container {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Change to 3 columns for better spacing */
+  gap: 20px; /* Increase gap between items */
+  width: 95vw; /* Use viewport width */
+  height: 95vh; /* Use viewport height */
+  margin: 2.5vh auto; /* Center container with equal margins */
+  padding: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.pinterest-item {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%; /* Create square aspect ratio */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.pinterest-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.5s ease;
+}
+
+/* Update media queries for responsive layout */
+@media (min-width: 1200px) {
+  .pinterest-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .pinterest-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pinterest-container {
+    grid-template-columns: repeat(1, 1fr); /* 1 column on small screens */
+    gap: 10px;
+  }
+}
